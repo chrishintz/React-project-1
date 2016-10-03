@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
     <meta charset="utf-8">
     <title>My First React File</title>
   </head>
   <body>
+    <div id='react-containier'>
 
+    </div>
+    <script>
+      ReactDOM.render(
+        React.createElement('div', null, 'Hello World'),
+        // where we want the created element to go.  In this case the div w/ the id= 'react-containier'
+        document.getElementById('react-containier'))
+    </script>
   </body>
 </html>
