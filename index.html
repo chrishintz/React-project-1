@@ -10,15 +10,14 @@
   <body>
     <div id='react-containier'></div>
     <script type="text/babel">
-      var MyComponent = React.createClass({
-        // Render is always required when we create a component, because it tells react what we want to render to the DOM
+      class MyComponent extends React.Component {
         render() {
-            return <div>
-              <h1>Hello, World</h1>
-              <p>This is my first React component!</p>
-            </div>
+          return <div>
+            <h1>Hello, World</h1>
+            <p>This is my first React component!</p>
+          </div>
         }
-      })
+      }
 
       ReactDOM.render(<MyComponent />,
         document.getElementById('react-containier')
