@@ -12,7 +12,10 @@
     </div>
     <script>
       ReactDOM.render(
-        React.createElement('div', null, 'Hello World'),
+        React.createElement('ul', null,
+          React.createElement('li', null, 'item 1'),
+          React.createElement('li', null, 'item 2'),
+          React.createElement('li', null, 'item 3')),
         // where we want the created element to go.  In this case the div w/ the id= 'react-containier'
         document.getElementById('react-containier'))
     </script>
